@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ResumeAI - Ignite Your Career with AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#34D399", // Electric Green
+                "accent": "#FACC15",  // Bright Yellow
+                "charcoal": "#111827", // Deep Charcoal Background
+                "charcoal-light": "#1F2937",
+                "surface": "#111827",
+                "on-surface": "#F9FAFB",
+                "on-surface-variant": "#9CA3AF"
+              },
+              fontFamily: {
+                "headline": ["Oswald", "sans-serif"],
+                "body": ["Roboto", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bold-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(52, 211, 153, 0.3);
+        }
+        .yellow-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(250, 204, 21, 1);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px #34D399;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-charcoal font-body text-on-surface antialiased selection:bg-primary selection:text-charcoal">
+<nav class="fixed top-0 w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-white/5">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="text-3xl font-bold tracking-tighter text-primary font-headline uppercase">ResumeAI</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-primary border-b-2 border-primary pb-1 font-headline uppercase text-sm tracking-widest" href="#">Features</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors font-headline uppercase text-sm tracking-widest" href="#">Templates</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors font-headline uppercase text-sm tracking-widest" href="#">Pricing</a>
+<a class="text-on-surface/70 hover:text-primary transition-colors font-headline uppercase text-sm tracking-widest" href="#">Reviews</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:block text-on-surface/70 hover:text-white font-bold text-sm transition-all uppercase tracking-wider">Log In</button>
+<button class="bg-primary hover:bg-white text-charcoal px-8 py-3 font-bold text-sm uppercase tracking-tighter transition-all duration-300 transform -skew-x-12">
+<span class="inline-block skew-x-12">Build My Resume</span>
+</button>
+</div>
+</div>
+</nav>
+<section class="relative pt-48 pb-32 px-6 overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/4 -z-10"></div>
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center relative">
+<div class="w-full lg:w-3/5 z-20">
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-accent text-charcoal mb-8 transform -skew-x-6">
+<span class="material-symbols-outlined text-sm font-bold" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-xs font-black uppercase tracking-[0.2em] skew-x-6">Trusted by 50,000+ High-Performers</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-bold text-white leading-[0.95] uppercase mb-8">
+                Ignite Your Career: <br/>
+<span class="text-primary italic">AI Resumes,</span> <br/>
+<span class="text-accent">Instant Impact.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-12 leading-tight font-light">
+                Slash your job search time in half. Our aggressive AI engine builds high-velocity, ATS-shredding resumes that command attention.
+            </p>
+<div class="flex flex-col sm:flex-row items-center gap-6 mb-12">
+<button class="w-full sm:w-auto px-10 py-5 bg-primary text-charcoal font-headline font-bold text-2xl uppercase tracking-tighter yellow-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                    Start Building Now
+                </button>
+<div class="flex items-center gap-3 text-accent font-bold uppercase tracking-widest text-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">speed</span>
+<span>100% Speed Optimized</span>
+</div>
+</div>
+<div class="flex items-center gap-6 border-l-4 border-primary pl-6">
+<div class="flex -space-x-3">
+<img alt="User" class="w-12 h-12 rounded-none border-2 border-primary object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzo9Y2EyWlnyHFC_h33VZ5Ak3RR4ZNE5zy32AtNvA-uHhOCpg4eo8IdRRMQsA66sil_cOBlZjs68loW4uKbjghaKKZLcbr7FOiF04ZTApUnnISfc33WuEBo7yzfvH4hXHRA_iaKyGJPevxr2qoJLfq-VWCooKKFjpgpLuiJOWBzWxTQNR2In0gSwwcemW1UMQ0fqTPRzSNrlDmJGnWnT5UuAvHibEOCaNA_C1XWaJ3wdzDYd24AxKV7Tmlmw7BmKeNJpFQUsh3as0"/>
+<img alt="User" class="w-12 h-12 rounded-none border-2 border-primary object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJIp7-eyVzsNoYvgx5_5uCS3iIZsx7Q4CrFDYhGspdDWuiSbGbPQG-8WNE2RA-0tA-WpkY3l3Pol-CICJATyOhLbPFe3Qxh8zxbmsnXZR8cWQa_uVKzCrdGjHg3ThqaG44recpB78paOiDJsJ-6P5FaN4ISxDIxV2ShfSFccqV4weL3uPmgKVaFgRKqsfFW6g99qchMfNtcrvrM1TdZNQTDLN9aRUhtjjL2av5xxieEGmyaXWzpeCGS-h7Zl5B7WiycxeOHLQQoxw"/>
+<img alt="User" class="w-12 h-12 rounded-none border-2 border-primary object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1YYFLIlhXBZIe4PZrMoafPVVejKaE4phMne7RXgsqjd1hOy9StzhmdwEx--IPXNZlN8FOja3KcEkQFlCZYa3_q7rik6q6-YUlUcSSpLJWY5jV3TdC0VXON9KXjtpox38lXiTVAoWBtsO22i_pzRVfyeQxfO3MzLx7Q-zBqoKoHBQF7U7aJovpt0WW8LS-wnY4GqlBIU9LHSgXQba7YSIZalM4d0cbGODD6kC7Cq3NlcuRuTPtXI4VWqWUAcmUsdJE0Vd0Or05qak"/>
+</div>
+<div class="text-sm">
+<span class="block font-black text-white uppercase tracking-tighter">4.9/5 Rating</span>
+<span class="text-on-surface-variant font-light">From 12k+ recent hires</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-2/5 mt-16 lg:mt-0 lg:-ml-24 relative z-10">
+<div class="relative p-2 bg-white/5 backdrop-blur-sm border border-white/10 transform rotate-2 lg:rotate-6 scale-110 bold-shadow">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" data-alt="Abstract geometric illustration showing upward progress and speed with sharp neon lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP33nKNKfJ4dnI0GGVgtB4Y59yAh6DzABZpCHMcH6B7j5jSHEnAzNf-JY54Yw0CeVaeCBrVwqTJhV2DVI0TUswlvmDghJ1PoQCqLP1aZeVSK8b4OhwJpNeDZU8k9bw4_0e-4vCNjsk2Fnjmu2JI-pV8BsxpS4v5gum8zeAD2ZHuxLor6DeYSXRABlimOIEw0E1uPml3lz5bxJk3fMLIU6GUq3deBeHljDFmQQnhgf7e2deh30rkN8fzPbA5Lt1AqER_xpPoug8BKM"/>
+<div class="absolute -bottom-8 -left-8 bg-accent p-6 yellow-shadow transform -rotate-6">
+<div class="flex items-center gap-4 text-charcoal">
+<span class="material-symbols-outlined text-4xl font-black">rocket_launch</span>
+<div>
+<div class="text-xl font-headline font-bold uppercase leading-none">98% Match</div>
+<div class="text-xs font-bold opacity-70">MAX IMPACT SCAN</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-charcoal-light relative">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-headline font-bold text-lg tracking-[0.3em] uppercase mb-4 block underline decoration-accent decoration-4 underline-offset-8">Force Multipliers</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-white uppercase italic">Built for Dominance</h2>
+</div>
+<p class="text-on-surface-variant text-xl max-w-sm font-light">
+                Outperform the competition with tools designed for aggressive career growth.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-white/10">
+<div class="bg-charcoal p-12 relative group overflow-hidden">
+<div class="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-primary text-charcoal flex items-center justify-center mb-10 transform -skew-x-12">
+<span class="material-symbols-outlined text-4xl font-bold skew-x-12">terminal</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-6 uppercase tracking-tight text-white">AI Power-Phrasing</h3>
+<p class="text-on-surface-variant text-lg leading-snug">
+                        Convert passive roles into high-impact achievements with our transformation engine.
+                    </p>
+</div>
+</div>
+<div class="bg-charcoal p-12 relative group overflow-hidden">
+<div class="absolute inset-0 bg-accent/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-accent text-charcoal flex items-center justify-center mb-10 transform -skew-x-12">
+<span class="material-symbols-outlined text-4xl font-bold skew-x-12">radar</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-6 uppercase tracking-tight text-white">ATS Shredder</h3>
+<p class="text-on-surface-variant text-lg leading-snug">
+                        Zero formatting errors. Maximum keyword density. Guaranteed bypass of digital gatekeepers.
+                    </p>
+</div>
+</div>
+<div class="bg-charcoal p-12 relative group overflow-hidden">
+<div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-white text-charcoal flex items-center justify-center mb-10 transform -skew-x-12">
+<span class="material-symbols-outlined text-4xl font-bold skew-x-12">layers</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-6 uppercase tracking-tight text-white">Brutal Minimalist</h3>
+<p class="text-on-surface-variant text-lg leading-snug">
+                        Design that communicates authority and precision. No fluff, just results.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8 bg-charcoal-light p-12 relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="font-headline text-4xl md:text-5xl font-bold mb-6 uppercase text-white">Tailor Instantly, <br/><span class="text-primary italic">Win Constantly</span></h3>
+<p class="text-on-surface-variant text-xl mb-12 max-w-lg font-light">Stop sending generic applications. Our AI re-engineers your resume for every job posting in seconds.</p>
+<div class="bold-shadow bg-charcoal p-4 transform -rotate-1 group-hover:rotate-0 transition-transform duration-700">
+<img class="w-full grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700" data-alt="Abstract geometric data visualization showing keyword matching and performance metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa6S736W5kZ7E7mEdt7Gs4tAGMM09Wgd1nVweBbtffX98QSILmPMBMM6Ydaewkq5sgVK5JKSF-Qn_l_8zPYYpQ26noWTDf5xg47ujYOQF1YR4i3PoNqhK-l-zXJpEAgSlyqxSEswK8UlFEYo1lXWuX4XLzw2qy-o4pweufncgYpdXRT5ZYFEhaJyUSAnX3x3TzYvZZQp7HiKFywstu-P6ecQr3CpgdIx273jpXZiLMK8XhgDnIJfA3Oat_SJzFJoVHDULlDASgBSA"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-12">
+<div class="flex-1 bg-primary p-12 transform -skew-y-2 hover:skew-y-0 transition-transform">
+<div class="skew-y-2 group-hover:skew-y-0">
+<span class="material-symbols-outlined text-charcoal text-5xl mb-6">timer</span>
+<h4 class="font-headline text-3xl font-bold mb-4 uppercase text-charcoal">5-Min Blitz</h4>
+<p class="text-charcoal/80 font-bold uppercase tracking-tighter">Zero Friction. Rapid Deployment.</p>
+</div>
+</div>
+<div class="flex-1 bg-accent p-12 transform skew-y-2 hover:skew-y-0 transition-transform">
+<div class="-skew-y-2 group-hover:skew-y-0">
+<span class="material-symbols-outlined text-charcoal text-5xl mb-6">edit_document</span>
+<h4 class="font-headline text-3xl font-bold mb-4 uppercase text-charcoal">Cover Letters</h4>
+<p class="text-charcoal/80 font-bold uppercase tracking-tighter">Matching high-impact messaging.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-charcoal-light">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-24">
+<h2 class="font-headline text-6xl font-bold mb-6 text-white uppercase italic">Investment</h2>
+<p class="text-on-surface-variant font-headline tracking-widest text-lg uppercase">The Price of Professional Impact</p>
+</div>
+<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-charcoal p-12 border border-white/5 relative overflow-hidden group">
+<div class="text-stroke text-7xl font-headline font-black absolute -top-4 -right-4 opacity-20 group-hover:opacity-40 transition-opacity">BASIC</div>
+<h3 class="font-headline text-3xl font-bold mb-2 uppercase text-white">Starter</h3>
+<div class="flex items-baseline gap-2 mb-10">
+<span class="text-6xl font-headline font-black text-primary">$0</span>
+<span class="text-on-surface-variant uppercase font-bold tracking-tighter">One Shot</span>
+</div>
+<ul class="space-y-6 mb-12 text-on-surface/80 font-medium">
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">chevron_right</span> 1 High-Impact Resume</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">chevron_right</span> Standard ATS Check</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">chevron_right</span> Digital Export</li>
+</ul>
+<button class="w-full py-4 bg-white/5 border border-white/20 text-white font-headline font-bold text-xl uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all">Start Baseline</button>
+</div>
+<div class="bg-charcoal p-12 border-4 border-primary relative bold-shadow transform scale-105 z-10">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-accent text-charcoal text-xs font-black px-6 py-2 uppercase tracking-[0.3em]">Extreme Value</div>
+<h3 class="font-headline text-3xl font-bold mb-2 uppercase text-primary">Pro Impact</h3>
+<div class="flex items-baseline gap-2 mb-10">
+<span class="text-6xl font-headline font-black text-white">$12</span>
+<span class="text-on-surface-variant uppercase font-bold tracking-tighter">Unlimited</span>
+</div>
+<ul class="space-y-6 mb-12 text-on-surface font-medium">
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-accent">bolt</span> Unlimited Resume Variants</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-accent">bolt</span> Aggressive AI Optimization</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-accent">bolt</span> LinkedIn Profile Sync</li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-accent">bolt</span> Dedicated Cover Letters</li>
+</ul>
+<button class="w-full py-5 bg-primary text-charcoal font-headline font-bold text-2xl uppercase tracking-tighter hover:bg-accent hover:text-charcoal transition-all">Claim Pro Access</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 relative">
+<div class="max-w-6xl mx-auto px-6">
+<div class="bg-primary p-20 relative overflow-hidden text-center group">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(#111827_2px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-6xl md:text-8xl font-black text-charcoal mb-10 uppercase italic leading-none">Stop Searching. <br/>Start Landing.</h2>
+<p class="text-charcoal font-bold text-xl mb-12 max-w-2xl mx-auto uppercase tracking-tighter">Join the elite 1% of candidates who use AI to bypass the noise.</p>
+<button class="px-12 py-6 bg-charcoal text-primary font-headline font-bold text-3xl uppercase tracking-tighter yellow-shadow hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all">
+                    Launch My Career Now
+                </button>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-charcoal-light border-t border-white/5 pt-24 pb-12">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-16">
+<div class="md:col-span-1">
+<div class="text-3xl font-headline font-bold text-primary uppercase mb-8">ResumeAI</div>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                Aggressive engineering for modern careers. Precision at every step.
+            </p>
+<div class="mt-8 text-on-surface-variant text-sm font-bold uppercase tracking-widest">
+                © 2024 ResumeAI
+            </div>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold text-white uppercase mb-8 tracking-widest">Tactics</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Resume Builder</a></li>
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Templates</a></li>
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold text-white uppercase mb-8 tracking-widest">Intel</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Privacy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Terms</a></li>
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Manifesto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold text-white uppercase mb-8 tracking-widest">Contact</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Support</a></li>
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Partners</a></li>
+<li><a class="text-on-surface-variant hover:text-primary uppercase text-sm font-bold tracking-tight transition-colors" href="#">Twitter</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+</body></html>
