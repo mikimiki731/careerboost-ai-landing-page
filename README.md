@@ -1,2 +1,14 @@
-# careerboost-ai-landing-page
-Modern SaaS landing page for an AI career and resume builder platform. Built with HTML and CSS, fully responsive and optimized for conversions and performance.
+# CareerBoost AI Landing Page
+
+A clean and modern SaaS landing page designed to help users build resumes and grow their careers faster.
+
+## Features
+- Conversion-focused design
+- Mobile-first responsive layout
+- Clear CTA and pricing structure
+- Lightweight and fast performance
+
+## Tech Stack
+- HTML
+- CSS (Tailwind)
+
